@@ -39,7 +39,7 @@
           <li class="nav-item mr-1"><a href="{% url 'movies:adult' %}" class="mx-right"><button type="button" class="btn btn-danger">애들은 가라</button></a></li>
           {% endif %}
           {% if request.user.is_admin %}
-          <li class="nav-item"><a href="http://final-project-pigeonking.c9users.io:8080/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a></li>
+          <li class="nav-item"><a href="/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a></li>
           {% endif %}
     </ul>
   </div>

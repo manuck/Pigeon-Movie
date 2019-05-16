@@ -116,19 +116,10 @@ def adult(request):
     movies = Movie.objects.all().annotate(score_avg=Avg('score__value'))
     user = request.user
     user_age = datetime.datetime.today().year - user.date_of_birth.year
-    genre_list = Genre.objects.all()
-    genres = []
-    for i in genre_list:
-        if i.name == '에로':
-            if user_age > 18:
-                genres.append(i)
-            else:
-                pass
-        else:
-            genres.append(i)
+    
     
     if user_age > 18:
-        return render(request, 'adult.html', {'movies':movies, 'user_age':user_age, 'genres':genres}) 
+        return render(request, 'adult.html', {'movies':movies, 'user_age':user_age}) 
     else:
         return redirect('movies:index')
     
