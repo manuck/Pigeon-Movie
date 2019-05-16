@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+Nokids Zone
+{% endblock %}
+{% block body %}
+    <a href="{% url 'movies:index' %}"><button type="button" class="btn btn-primary">목록 보러가기</button></a>
+    {% if request.user.is_admin %}
+    <a href="http://final-project-pigeonking.c9users.io:8080/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+    {% for movie in movies %}
+        {% if movie.view_age > 18 %}
+        <div class="col-sm-3">
+        <div class="card mt-5" style="width: 10rem;">
+          <a href="{% url 'movies:detail' movie.pk %}"><img src="{{ movie.poster_url }}" class="card-img-top"></a>
+          <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <span class="badge badge-info">{{ movie.score_avg|floatformat:1 }}</span>
+          {% if movie.view_age > 18 %}
+          <span class="badge badge-pill badge-danger">{{movie.view_age}}</span>
+          {% endif %}
+          </div>
+        </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+    </div>
+    
+{% endblock %}

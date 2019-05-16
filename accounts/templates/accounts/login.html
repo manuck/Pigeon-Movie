@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    div.top{
+        width:700px;
+        height:500px;
+        background-color:#eee;
+        background-image:url("/media/12329029.jpg");
+        background-size:100%100%;
+        text-align:center;
+    }
+    div.con{
+        width:100%;
+        height:700px;
+    }
+    div.contain{
+        padding:10px;
+        text-align:right;
+        margin-right:25px;
+    }
+    div.fieldWrapper{
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+    div.welcom{
+        width:100%;
+        height:70px;
+    }
+
+    select[name="date_of_birth_year"]{
+        width:99px;
+        height:30px;
+        border-radius:4px 0px 0px 4px;
+    }
+    select[name="date_of_birth_month"]{
+        width:69px;
+        height:30px;
+    }
+    select[name="date_of_birth_day"]{
+        width:45px;
+        height:30px;
+        border-radius:0px 4px 4px 0px;
+    }
+    
+    h3{
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px!important;
+        color: #eee;
+        /*letter-spacing: 3px;*/
+        text-align: center;
+        position:relative;
+        left:12px;
+    }
+    h5{
+        margin-top:13px;
+        margin-left:38px;
+        margin-bottom:15px;
+        font-size:0.9rem;
+        text-align: center;
+        color:red;
+        position:relative;
+        right:7px;
+        
+    }
+	input[type="text"]{
+	    width:213px!important;
+	    height:30px;
+	    border:2px solid #ddd;
+	    border-radius:4px;
+	    padding:2px 4px;
+	    line-height:17px;
+	    
+	}
+	input[type="password"]{
+	    width:213px!important;
+	    height:30px;
+	    border:2px solid #ddd;
+	    border-radius:4px;
+	    padding:2px 4px;
+	    line-height:17px;
+	   
+	}
+	
+    label[for="id_username"] {
+        font-size:16px;
+        margin:0;
+        color:orange;
+        font-weight:400;
+    }
+    label[for="id_password"] {
+        font-size:16px;
+        margin:0;
+        color:orange;
+        font-weight:400;
+    }
+    label[for="id_date_of_birth_year"] {
+        font-size:16px;
+        margin:0;
+        color:orange;
+        font-weight:400;
+    }
+    ul.errorlist{
+        position: relative;
+        right:30px;
+        bottom:4px;
+    }
+    
+    ul.errorlist>li{
+        list-style:none;
+        margin:0px;
+        font-size: 16px;
+        position: absolute;
+        z-index: 1;
+        padding-left: 5px;
+        width: 390px;
+        color: red;
+        font-weight: 700;
+    }
+    
+    form{
+        width:700px;
+    }
+    .gg{
+        width:2px;
+    }
+	.tdd{
+        background-color:black;
+    }
+    .tde{
+        background-color:#630808;
+    }
+    input[type="checkbox"]{
+	    /*margin-top:7px;*/
+	    margin-right:7px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #bcbcbc;
+		cursor: pointer;
+	}
+	input[type="checkbox"]:checked{
+		background-color: #666666;
+	}
+</style>
+
+{% endblock %}
+{% block body %}
+    <br>
+    <div class="d-flex justify-content-center"> <div class="top"></div></div>
+    <br>
+
+    <div class="d-flex justify-content-center con">
+        <form method = "POST">
+    <h3> 방문을 환영합니다. </h3>
+    <h5> 로그인 후 서비스를 이용하실 수 있습니다.</h5>
+        {% csrf_token %}
+        {% for field in login_form %}
+            <table style="border-collapse: collapse;">
+                <th style="font-size:16px;font-weight:300;width:16em;padding-right:10px;text-align:right;padding:12px 10px 10px 2px;vertical-align:top;">
+                    <span style="color:red;margin-right:1px"></span>{{ field.label_tag }}
+                </th>
+                <td style="padding:10px 2px;margin-right:10px;">
+                    {{ field }} 
+                </td>
+                <td class="gg">
+                    {{field.errors}}
+                </td>
+            </table>
+        {% endfor %}<br>
+            <table style="border-collapse: collapse;">
+                 <th style="font-size:16px;font-weight:300;width:16em;padding-right:10px;text-align:right;padding:12px 10px 10px 2px;vertical-align:top;">
+                    
+                </th>
+                <td style="padding:10px 2px;margin-right:10px;">
+                    <div class="d-flex justify-content-center fieldWrapper" style="margin-top:0;">
+                    <input type="submit" value="로그인" class="btn btn-danger btn-lg btn-block" style="width:213px;height:40px;font-size:16px;padding:4px 8px;">
+                    </div>
+                </td>
+            </table>
+        
+        
+    </form>
+    </div>
+    
+
+
+
+{% endblock %}

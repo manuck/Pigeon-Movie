@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>프로필</h1>
+    <p>{{ user_detail.pk }}번째 유저</p>
+    <p> 이름: {{ user_detail.username }}</p>
+    
+{% endblock %}

@@ -1,0 +1,9 @@
+<!--userlist.html-->
+{% extends 'base.html' %}
+
+{% block body %}
+{% for user in users %}
+    <a href="{% url 'accounts:user_detail' user.pk %}">{{ user }}</a><br>
+{% endfor %}
+
+{% endblock %}

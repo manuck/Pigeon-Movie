@@ -1,0 +1,17 @@
+<form action="{% url 'movies:edit' movie.pk %}" method="POST">
+    {% csrf_token %}
+    제목 : <input type="text" name="title" value="{{movie.title}}">
+    관객 수 : <input type="number" name="audience" value="{{movie.audience}}">
+    감독 : <input type="text" name="director" value="{{movie.director}}">
+    설명 : <textarea name="description">{{movie.description}}</textarea>
+    장르 : <select name="genre">
+        {% for genre in genres %}
+            {% if genre.id == movie.genre.id %}
+                <option value="{{genre.id}}" selected>{{genre.name}}</option>
+            {% else %}
+                <option value="{{genre.id}}">{{genre.name}}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    <input type="submit">
+</form>

@@ -1,0 +1,47 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#393e46">
+<img src="/media/logo.png" style="width:50px;height:50px">
+  <a class="navbar-brand" href="/movies/"><i class="fab fa-instagram"></i>Pigeon Movie</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      {% if user.is_authenticated %}
+	    <li class="nav-item active">
+      </li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'accounts:update' %}">Update Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'movies:donate' %}">Donate</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'accounts:delete' %}" onclick="return(confirm('탈퇴하시겠습니까?'))">회원탈퇴</a></li>
+	    {% else %}
+	    <li class="nav-item"><a class="nav-link" href="{% url 'accounts:login' %}">Login</a></li>
+	    <li class="nav-item"><a class="nav-link" href="{% url 'accounts:signup' %}">Signup</a></li>
+	    <li class="nav-item"><a class="nav-link" href="{% url 'movies:donate' %}">Donate</a></li>
+	    {% endif %}
+	    {% if request.user.is_admin %}
+        <li class="nav-item"><a class="nav-link" href="{% url 'accounts:userlist' %}">유저정보</a></li>
+      {% endif %}
+    <!--검색기능-->
+    {% if user.is_authenticated %}
+    <form action="{% url 'movies:search' %}" class="form-inline my-2 my-lg-0">
+        <input name="title" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    {% endif %}
+    </ul>
+      
+  </div>
+  <div class="navbar-collapse collapse order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+        {% if user_age > 18 %}
+          <li class="nav-item mr-1"><a href="{% url 'movies:adult' %}" class="mx-right"><button type="button" class="btn btn-danger">애들은 가라</button></a></li>
+          {% endif %}
+          {% if request.user.is_admin %}
+          <li class="nav-item"><a href="http://final-project-pigeonking.c9users.io:8080/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a></li>
+          {% endif %}
+    </ul>
+  </div>
+  <!--navar-->
+
+</nav>
