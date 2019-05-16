@@ -1,0 +1,376 @@
+[
+{
+    "model": "accounts.myuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$TXREmuj88Pwj$jwcp49vXcvg8CLCkzhqpHskZqXTFc3cZ/La2gW3Zq+w=",
+        "last_login": "2019-05-16T04:25:14.116Z",
+        "username": "admin",
+        "date_of_birth": "2015-12-12",
+        "is_active": true,
+        "is_admin": true,
+        "favorite_genres": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$aai3EY52VDGV$a4H0/RUlXMtEakkjA5YKgLy39Q3cc+LsccSTVDDkUNI=",
+        "last_login": "2019-05-14T06:45:49.968Z",
+        "username": "mother5",
+        "date_of_birth": "2015-04-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            3,
+            5,
+            10
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$eNXDjwN8lpw3$vf4dfwPA2M2BXgcHmoPbsaqjynoCs4Rf0ROlBlmmfyY=",
+        "last_login": "2019-05-14T06:49:12.680Z",
+        "username": "zxd",
+        "date_of_birth": "2018-02-04",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            5
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$FuGGsv8QzbS6$A1rsPGNT30QOqBuhfMAXXJ0tUziq6RbrINBHPTra8Og=",
+        "last_login": "2019-05-15T04:57:43.049Z",
+        "username": "manuck",
+        "date_of_birth": "1994-07-26",
+        "is_active": true,
+        "is_admin": true,
+        "favorite_genres": [
+            7
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$59MjN7MUA5Jg$bu5AsbSo5SwW3Mp+nR3mqxD2XDTtT7WgJTXE+/076t4=",
+        "last_login": "2019-05-14T06:51:32Z",
+        "username": "god",
+        "date_of_birth": "1998-12-12",
+        "is_active": true,
+        "is_admin": true,
+        "favorite_genres": [
+            7
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$jpZkQPgBHkcQ$d9R/oshAaVSAsrsXa64w9WzjI3EoMHLt8ZiAJyp1OaQ=",
+        "last_login": "2019-05-15T03:24:39.879Z",
+        "username": "mom2",
+        "date_of_birth": "2019-07-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            1
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$wKgpQmi1zxRA$j+q19Hg1ZLbnFuFwqueB6d0zMuIugAs/N+Ltla3KTXQ=",
+        "last_login": "2019-05-14T08:56:29.851Z",
+        "username": "man",
+        "date_of_birth": "1996-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$GOJzicSo1XnJ$YMluz2LlG1peJq9evlba3ppYst0YwrnE2Z6k0nR2VQw=",
+        "last_login": "2019-05-14T08:20:13.661Z",
+        "username": "mother4",
+        "date_of_birth": "1972-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            1,
+            4,
+            7,
+            8,
+            10
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$6XqOnswfqnIH$aOdZebqsc06ynJ6xQbhZBjl+LdfVT/ckvA5kVrhoIBc=",
+        "last_login": "2019-05-14T08:35:11.118Z",
+        "username": "father",
+        "date_of_birth": "1998-03-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            3,
+            5,
+            11,
+            15,
+            16
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$59wqiNe3xkds$280mTXlz1sOBYZNJtEVnnhCjiCA7kBXgca/PzEWJPaM=",
+        "last_login": "2019-05-14T08:45:33.284Z",
+        "username": "\ube44\ub458\uae30",
+        "date_of_birth": "2019-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": []
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$ATRuH7rAUjTU$kgWmFAifQNbsKZp23vJYosTp9hytPxf64L/mHol8mrA=",
+        "last_login": "2019-05-14T08:46:41.732Z",
+        "username": "\uc5d0\ub85c\uc2b9\ub9cc",
+        "date_of_birth": "2000-09-10",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            1,
+            9
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$TqrSsUwaGQD7$0Q/4uk+YA65UbJoe3Rf+OKcof6hqfKKIzTME7z3xbCQ=",
+        "last_login": "2019-05-14T08:55:07.486Z",
+        "username": "fam",
+        "date_of_birth": "2014-07-05",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            9,
+            22
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$znI6JKTzDiJ5$FLXwTJQz9WljW4QmX7U7puLT7r4Nhri3678slNrsaPo=",
+        "last_login": "2019-05-16T06:29:23.855Z",
+        "username": "mom",
+        "date_of_birth": "1998-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            9,
+            15,
+            16,
+            23
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$IpjiaNqVUVAb$EUDDyMA97WrQjKKAeeo4jjxdE0DZyF+joFApfIitpvY=",
+        "last_login": "2019-05-14T13:51:26.573Z",
+        "username": "mom334",
+        "date_of_birth": "1978-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            3,
+            9,
+            11,
+            15,
+            17
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 18,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$CdeinI7bPhCC$z2VPVs3PqaOLhk+BsuYmx9n4L1/yncz8Cx6y9YlWIYw=",
+        "last_login": "2019-05-14T14:11:09.768Z",
+        "username": "mom32",
+        "date_of_birth": "1998-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            2,
+            3,
+            9
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 19,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$iuhfVOfGHBBE$zshX28Bw1As0MHtWRWeCdT8fqVBU30BqYOadoo7JDDc=",
+        "last_login": "2019-05-14T23:46:24.117Z",
+        "username": "aa",
+        "date_of_birth": "2000-03-22",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            8,
+            14,
+            16
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 20,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$WLou208Tyz1g$Y839+635iR6US2+lDnEKUH6s9n3WlObPSb+WE88zCWc=",
+        "last_login": "2019-05-15T01:54:30.432Z",
+        "username": "mom3",
+        "date_of_birth": "2019-03-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            3,
+            9,
+            26
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 21,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$HIGs6RJF9iC5$QxMCff+jMTza47/RP2jrpPctt1uJ+m4suN1Bmaj1YZ8=",
+        "last_login": "2019-05-15T03:13:34.997Z",
+        "username": "mom24",
+        "date_of_birth": "2019-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            20,
+            21
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 22,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$XcaWrhgTyYZW$MyaI4QWAtRqLBIj423j5IVpy3bZNK5KcFaKfaw3KrnY=",
+        "last_login": "2019-05-15T08:07:08.668Z",
+        "username": "mom4",
+        "date_of_birth": "2001-03-22",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            8,
+            9,
+            14,
+            20,
+            21
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 23,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$GrQSWLEWyGME$SvbU0ZFrX3u1MktGeR6WwMOV7USZN5qNQ5wNNT0QmL0=",
+        "last_login": "2019-05-16T02:41:24.306Z",
+        "username": "father23",
+        "date_of_birth": "1975-05-22",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            9
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 24,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$KMEgYl6pQjnK$DlVYdjEPk2RFzTP753ZFTBNo4Z7z+QZQzqe/vuQOPHw=",
+        "last_login": "2019-05-16T02:46:55.888Z",
+        "username": "father212",
+        "date_of_birth": "2002-03-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": [
+            3,
+            9,
+            15,
+            21
+        ]
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 25,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$9mQHBtewl1u0$a5Jj12DgjaRj8aYY2oWNqNnlbbxQAZ+UGMq9LnLcfHQ=",
+        "last_login": "2019-05-16T04:49:04.148Z",
+        "username": "gg",
+        "date_of_birth": "2000-03-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": []
+    }
+},
+{
+    "model": "accounts.myuser",
+    "pk": 26,
+    "fields": {
+        "password": "pbkdf2_sha256$120000$AAcQ6xgODcKu$q64x3br8r4Qm8LD0fwH36/k+Zrj+qBKEbwcMnuuiTPs=",
+        "last_login": "2019-05-16T04:50:13.868Z",
+        "username": "mother",
+        "date_of_birth": "2000-01-01",
+        "is_active": true,
+        "is_admin": false,
+        "favorite_genres": []
+    }
+}
+]
