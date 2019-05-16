@@ -5,7 +5,7 @@ Nokids Zone
 {% block body %}
     <a href="{% url 'movies:index' %}"><button type="button" class="btn btn-primary">목록 보러가기</button></a>
     {% if request.user.is_admin %}
-    <a href="http://final-project-pigeonking.c9users.io:8080/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a>
+    <a href="/admin/movies/movie/add/"><button type="button" class="btn btn-primary">영화등록</button></a>
     {% endif %}
     <div class="container">
         <div class="row">

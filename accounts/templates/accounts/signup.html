@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block style %}
 <style>
     div.top{
         width:700px;
         height:500px;
         background-color:#eee;
-        background-image:url("/media/12329029.jpg");
+        background-image:url("{% static '12329029.jpg' %}");
         background-size:100%100%;
         text-align:center;
     }
